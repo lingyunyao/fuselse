@@ -1,0 +1,386 @@
+{
+  "peak_hbm_gbps": {
+    "v100": 900,
+    "a100": 2039,
+    "h100": 3350,
+    "h200": 4800
+  },
+  "ncu_results": {
+    "v100": {
+      "torch": {
+        "256": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 2159219.2,
+          "gpu_time_us_per_call": 45.4848,
+          "dram_pct_peak_avg": 5.1302222222222245,
+          "sm_pct_peak_avg": 2.3364444444444445,
+          "warps_active_pct_avg": 13.821666666666669,
+          "compute_us_per_call": 1.2296243199999999,
+          "hbm_active_us_per_call": 2.5694771199999993
+        },
+        "1024": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 8450700.8,
+          "gpu_time_us_per_call": 55.8048,
+          "dram_pct_peak_avg": 12.832333333333331,
+          "sm_pct_peak_avg": 4.262777777777777,
+          "warps_active_pct_avg": 19.444111111111113,
+          "compute_us_per_call": 3.2239846400000016,
+          "hbm_active_us_per_call": 9.633286400000001
+        },
+        "4096": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 44150617.6,
+          "gpu_time_us_per_call": 109.68960000000001,
+          "dram_pct_peak_avg": 25.528777777777773,
+          "sm_pct_peak_avg": 5.647111111111111,
+          "warps_active_pct_avg": 24.552000000000007,
+          "compute_us_per_call": 11.223656,
+          "hbm_active_us_per_call": 49.28844864000001
+        },
+        "16384": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 195178096.0,
+          "gpu_time_us_per_call": 285.0944,
+          "dram_pct_peak_avg": 36.530999999999985,
+          "sm_pct_peak_avg": 8.273444444444436,
+          "warps_active_pct_avg": 41.92311111111106,
+          "compute_us_per_call": 51.25516096,
+          "hbm_active_us_per_call": 217.81956032000008
+        },
+        "65536": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 799150624.0,
+          "gpu_time_us_per_call": 1008.8608,
+          "dram_pct_peak_avg": 40.36411111111111,
+          "sm_pct_peak_avg": 7.102333333333332,
+          "warps_active_pct_avg": 44.91977777777772,
+          "compute_us_per_call": 177.13067711999994,
+          "hbm_active_us_per_call": 889.0342467199998
+        },
+        "128256": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 1569782057.6,
+          "gpu_time_us_per_call": 1946.2048,
+          "dram_pct_peak_avg": 40.69399999999999,
+          "sm_pct_peak_avg": 6.839333333333329,
+          "warps_active_pct_avg": 45.23422222222218,
+          "compute_us_per_call": 338.2925004800001,
+          "hbm_active_us_per_call": 1746.29919552
+        }
+      },
+      "fused_float": {
+        "256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 531616.0,
+          "gpu_time_us_per_call": 5.7951999999999995,
+          "dram_pct_peak_avg": 10.198,
+          "sm_pct_peak_avg": 22.136,
+          "warps_active_pct_avg": 61.40500000000001,
+          "compute_us_per_call": 1.2827859199999998,
+          "hbm_active_us_per_call": 0.5909324799999999
+        },
+        "1024": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 2104480.0,
+          "gpu_time_us_per_call": 8.4032,
+          "dram_pct_peak_avg": 28.205000000000002,
+          "sm_pct_peak_avg": 22.048,
+          "warps_active_pct_avg": 68.464,
+          "compute_us_per_call": 1.85265248,
+          "hbm_active_us_per_call": 2.3700144
+        },
+        "4096": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 8398601.6,
+          "gpu_time_us_per_call": 15.702399999999999,
+          "dram_pct_peak_avg": 59.55500000000001,
+          "sm_pct_peak_avg": 22.078000000000003,
+          "warps_active_pct_avg": 73.627,
+          "compute_us_per_call": 3.46666336,
+          "hbm_active_us_per_call": 9.3518992
+        },
+        "16384": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 33564345.6,
+          "gpu_time_us_per_call": 44.7296,
+          "dram_pct_peak_avg": 83.66600000000001,
+          "sm_pct_peak_avg": 24.859,
+          "warps_active_pct_avg": 77.08999999999999,
+          "compute_us_per_call": 11.11922208,
+          "hbm_active_us_per_call": 37.42298976000001
+        },
+        "65536": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 134227734.4,
+          "gpu_time_us_per_call": 160.24960000000002,
+          "dram_pct_peak_avg": 93.15600000000002,
+          "sm_pct_peak_avg": 25.852000000000004,
+          "warps_active_pct_avg": 78.749,
+          "compute_us_per_call": 41.42779840000001,
+          "hbm_active_us_per_call": 149.28205983999996
+        },
+        "128256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 262680473.6,
+          "gpu_time_us_per_call": 312.4864,
+          "dram_pct_peak_avg": 93.471,
+          "sm_pct_peak_avg": 25.627000000000002,
+          "warps_active_pct_avg": 79.377,
+          "compute_us_per_call": 80.08009856,
+          "hbm_active_us_per_call": 292.0848915199999
+        }
+      },
+      "q16": {
+        "256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 531360.0,
+          "gpu_time_us_per_call": 6.3456,
+          "dram_pct_peak_avg": 9.324000000000002,
+          "sm_pct_peak_avg": 31.96,
+          "warps_active_pct_avg": 59.626,
+          "compute_us_per_call": 2.0283103999999996,
+          "hbm_active_us_per_call": 0.5916675200000001
+        },
+        "1024": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 2104326.4,
+          "gpu_time_us_per_call": 9.9264,
+          "dram_pct_peak_avg": 26.621999999999996,
+          "sm_pct_peak_avg": 31.159000000000002,
+          "warps_active_pct_avg": 64.245,
+          "compute_us_per_call": 3.1006998400000003,
+          "hbm_active_us_per_call": 2.64159072
+        },
+        "4096": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 8396553.6,
+          "gpu_time_us_per_call": 16.796799999999998,
+          "dram_pct_peak_avg": 55.55,
+          "sm_pct_peak_avg": 35.504,
+          "warps_active_pct_avg": 71.777,
+          "compute_us_per_call": 5.96328768,
+          "hbm_active_us_per_call": 9.330592000000001
+        },
+        "16384": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 33562377.6,
+          "gpu_time_us_per_call": 46.9088,
+          "dram_pct_peak_avg": 81.69899999999998,
+          "sm_pct_peak_avg": 37.966,
+          "warps_active_pct_avg": 75.771,
+          "compute_us_per_call": 17.814184,
+          "hbm_active_us_per_call": 38.3150416
+        },
+        "65536": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 134225699.2,
+          "gpu_time_us_per_call": 162.96,
+          "dram_pct_peak_avg": 91.762,
+          "sm_pct_peak_avg": 39.314,
+          "warps_active_pct_avg": 78.03899999999999,
+          "compute_us_per_call": 64.06580383999999,
+          "hbm_active_us_per_call": 149.53819935999996
+        },
+        "128256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 262677283.2,
+          "gpu_time_us_per_call": 315.06559999999996,
+          "dram_pct_peak_avg": 92.739,
+          "sm_pct_peak_avg": 39.068,
+          "warps_active_pct_avg": 79.24,
+          "compute_us_per_call": 123.08993983999997,
+          "hbm_active_us_per_call": 292.1881888
+        }
+      }
+    },
+    "h100": {
+      "torch": {
+        "256": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 2298700.8,
+          "gpu_time_us_per_call": 35.603199999999994,
+          "dram_pct_peak_avg": 1.732111111111111,
+          "sm_pct_peak_avg": 1.6074444444444453,
+          "warps_active_pct_avg": 12.06577777777778,
+          "compute_us_per_call": 0.6647926400000002,
+          "hbm_active_us_per_call": 0.6913078400000005
+        },
+        "1024": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 8590131.2,
+          "gpu_time_us_per_call": 42.9312,
+          "dram_pct_peak_avg": 4.882888888888888,
+          "sm_pct_peak_avg": 3.627777777777776,
+          "warps_active_pct_avg": 19.860000000000017,
+          "compute_us_per_call": 1.7890822399999997,
+          "hbm_active_us_per_call": 2.5765827199999993
+        },
+        "4096": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 33754240.0,
+          "gpu_time_us_per_call": 70.816,
+          "dram_pct_peak_avg": 9.971555555555561,
+          "sm_pct_peak_avg": 7.087555555555549,
+          "warps_active_pct_avg": 24.38033333333334,
+          "compute_us_per_call": 6.281346240000001,
+          "hbm_active_us_per_call": 10.098061440000002
+        },
+        "16384": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 158638387.2,
+          "gpu_time_us_per_call": 99.1808,
+          "dram_pct_peak_avg": 26.314333333333327,
+          "sm_pct_peak_avg": 13.696999999999996,
+          "warps_active_pct_avg": 41.60777777777776,
+          "compute_us_per_call": 28.48511456,
+          "hbm_active_us_per_call": 47.40514655999998
+        },
+        "65536": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 763783475.2,
+          "gpu_time_us_per_call": 314.49920000000003,
+          "dram_pct_peak_avg": 35.15744444444446,
+          "sm_pct_peak_avg": 12.364444444444434,
+          "warps_active_pct_avg": 43.30088888888885,
+          "compute_us_per_call": 99.81047487999996,
+          "hbm_active_us_per_call": 227.95712544
+        },
+        "128256": {
+          "n_kernels_per_call": 9.0,
+          "bytes_per_call": 1534628684.8,
+          "gpu_time_us_per_call": 588.0128000000001,
+          "dram_pct_peak_avg": 36.97422222222224,
+          "sm_pct_peak_avg": 12.088111111111104,
+          "warps_active_pct_avg": 43.62177777777775,
+          "compute_us_per_call": 190.94437888000004,
+          "hbm_active_us_per_call": 457.89415359999987
+        }
+      },
+      "fused_float": {
+        "256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 536806.4,
+          "gpu_time_us_per_call": 4.4704,
+          "dram_pct_peak_avg": 3.607,
+          "sm_pct_peak_avg": 15.381,
+          "warps_active_pct_avg": 38.82,
+          "compute_us_per_call": 0.68743616,
+          "hbm_active_us_per_call": 0.16120864
+        },
+        "1024": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 2112947.2,
+          "gpu_time_us_per_call": 5.097600000000001,
+          "dram_pct_peak_avg": 12.464,
+          "sm_pct_peak_avg": 18.335,
+          "warps_active_pct_avg": 39.269999999999996,
+          "compute_us_per_call": 0.9345347199999999,
+          "hbm_active_us_per_call": 0.63530176
+        },
+        "4096": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 8401126.4,
+          "gpu_time_us_per_call": 7.376,
+          "dram_pct_peak_avg": 34.202999999999996,
+          "sm_pct_peak_avg": 23.125000000000004,
+          "warps_active_pct_avg": 42.524,
+          "compute_us_per_call": 1.7049487999999997,
+          "hbm_active_us_per_call": 2.52168192
+        },
+        "16384": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 33633408.0,
+          "gpu_time_us_per_call": 15.7408,
+          "dram_pct_peak_avg": 63.92,
+          "sm_pct_peak_avg": 34.806000000000004,
+          "warps_active_pct_avg": 45.565,
+          "compute_us_per_call": 5.476877759999999,
+          "hbm_active_us_per_call": 10.0582416
+        },
+        "65536": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 134402816.0,
+          "gpu_time_us_per_call": 49.024,
+          "dram_pct_peak_avg": 81.85199999999998,
+          "sm_pct_peak_avg": 41.801,
+          "warps_active_pct_avg": 47.129,
+          "compute_us_per_call": 20.49127136,
+          "hbm_active_us_per_call": 40.12416512
+        },
+        "128256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 262812288.0,
+          "gpu_time_us_per_call": 90.59519999999999,
+          "dram_pct_peak_avg": 86.569,
+          "sm_pct_peak_avg": 43.991,
+          "warps_active_pct_avg": 47.665,
+          "compute_us_per_call": 39.8488208,
+          "hbm_active_us_per_call": 78.4170368
+        }
+      },
+      "q16": {
+        "256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 532684.8,
+          "gpu_time_us_per_call": 4.8128,
+          "dram_pct_peak_avg": 3.3260000000000005,
+          "sm_pct_peak_avg": 17.484,
+          "warps_active_pct_avg": 38.51800000000001,
+          "compute_us_per_call": 0.8413168,
+          "hbm_active_us_per_call": 0.16004288000000003
+        },
+        "1024": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 2105548.8,
+          "gpu_time_us_per_call": 5.6,
+          "dram_pct_peak_avg": 11.27,
+          "sm_pct_peak_avg": 23.57,
+          "warps_active_pct_avg": 41.208000000000006,
+          "compute_us_per_call": 1.3196659199999998,
+          "hbm_active_us_per_call": 0.6309980800000001
+        },
+        "4096": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 8397004.8,
+          "gpu_time_us_per_call": 8.6336,
+          "dram_pct_peak_avg": 29.148999999999994,
+          "sm_pct_peak_avg": 37.125,
+          "warps_active_pct_avg": 44.120999999999995,
+          "compute_us_per_call": 3.20477632,
+          "hbm_active_us_per_call": 2.5162572800000005
+        },
+        "16384": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 33670758.4,
+          "gpu_time_us_per_call": 19.4016,
+          "dram_pct_peak_avg": 51.876999999999995,
+          "sm_pct_peak_avg": 45.607000000000006,
+          "warps_active_pct_avg": 45.95,
+          "compute_us_per_call": 8.84678688,
+          "hbm_active_us_per_call": 10.06289984
+        },
+        "65536": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 134350259.2,
+          "gpu_time_us_per_call": 58.947199999999995,
+          "dram_pct_peak_avg": 68.02099999999999,
+          "sm_pct_peak_avg": 43.801,
+          "warps_active_pct_avg": 46.926,
+          "compute_us_per_call": 25.81873888,
+          "hbm_active_us_per_call": 40.09559168
+        },
+        "128256": {
+          "n_kernels_per_call": 1.0,
+          "bytes_per_call": 262854272.0,
+          "gpu_time_us_per_call": 109.92960000000001,
+          "dram_pct_peak_avg": 71.35300000000001,
+          "sm_pct_peak_avg": 45.452,
+          "warps_active_pct_avg": 47.188,
+          "compute_us_per_call": 49.96414912,
+          "hbm_active_us_per_call": 78.43646591999999
+        }
+      }
+    }
+  }
+}

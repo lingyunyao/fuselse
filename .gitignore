@@ -1,0 +1,28 @@
+# Experiments not included in the public release
+experiment_rlhf_compare_cce/
+experiment_microbenchmark/accuracy_audit/
+experiment_microbenchmark/modern_baselines/
+experiment_microbenchmark/torch_profile/
+
+# Private / paper-writing files
+*.pdf
+neurips26_rebuttal*.md
+neurips_camready.md
+
+# External dependencies cloned by the experiments (see README)
+experiment_particle_filter/particles/
+experiment_pyjuice/pyjuice/
+references/
+
+# Build artifacts
+*.so
+*.o
+__pycache__/
+*.pyc
+build/
+torch_extensions/
+
+# Cluster job logs
+slurm-*.out
+*-slurm-*.out
+*.log

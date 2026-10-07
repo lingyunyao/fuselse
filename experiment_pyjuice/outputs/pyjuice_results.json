@@ -1,0 +1,240 @@
+{
+  "gpu": "Tesla V100-PCIE-32GB",
+  "batch_size": 512,
+  "num_latents_grid": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "results": [
+    {
+      "num_latents": 4,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_default",
+          "time_ms": 6.201807975769043,
+          "err_mean": 0.00035682477755472064,
+          "err_max": 0.00244140625,
+          "err_p99": 0.00146484375,
+          "mean_ll": -4515.94580078125,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_sparse",
+          "time_ms": 5.503481149673462,
+          "err_mean": 0.00035682477755472064,
+          "err_max": 0.00244140625,
+          "err_p99": 0.00146484375,
+          "mean_ll": -4515.94580078125,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "torch_lse",
+          "time_ms": 22.64905834197998,
+          "err_mean": 0.0,
+          "err_max": 0.0,
+          "err_p99": 0.0,
+          "mean_ll": -4515.94580078125,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 3.6902103083474294,
+          "err_mean": 0.0004015972663182765,
+          "err_max": 0.001953125,
+          "err_p99": 0.00146484375,
+          "mean_ll": -4515.94580078125,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 3.5889165571757724,
+          "err_mean": 0.4539031386375427,
+          "err_max": 0.53125,
+          "err_p99": 0.5037746429443359,
+          "mean_ll": -4516.39990234375,
+          "abs_err_bias": 0.4541015625
+        }
+      ],
+      "ref_ll": -4515.94580078125,
+      "n_samples": 9728
+    },
+    {
+      "num_latents": 8,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_default",
+          "time_ms": 6.510683468409947,
+          "err_mean": 0.00024730281438678503,
+          "err_max": 0.00146484375,
+          "err_p99": 0.0009765625,
+          "mean_ll": -4456.88671875,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_sparse",
+          "time_ms": 5.738589695521763,
+          "err_mean": 0.00024644951918162405,
+          "err_max": 0.00146484375,
+          "err_p99": 0.0009765625,
+          "mean_ll": -4456.88671875,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "torch_lse",
+          "time_ms": 23.425543103899276,
+          "err_mean": 0.0,
+          "err_max": 0.0,
+          "err_p99": 0.0,
+          "mean_ll": -4456.88671875,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 3.7694811480385915,
+          "err_mean": 0.00041640433482825756,
+          "err_max": 0.00244140625,
+          "err_p99": 0.00146484375,
+          "mean_ll": -4456.8857421875,
+          "abs_err_bias": 0.0009765625
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 3.7280525820595876,
+          "err_mean": 1.2367098331451416,
+          "err_max": 1.34326171875,
+          "err_p99": 1.30029296875,
+          "mean_ll": -4458.12255859375,
+          "abs_err_bias": 1.23583984375
+        }
+      ],
+      "ref_ll": -4456.88671875,
+      "n_samples": 9728
+    },
+    {
+      "num_latents": 16,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_default",
+          "time_ms": 6.330413716179984,
+          "err_mean": 0.00649502407759428,
+          "err_max": 0.0302734375,
+          "err_p99": 0.02099609375,
+          "mean_ll": -4405.65966796875,
+          "abs_err_bias": 0.00048828125
+        },
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_sparse",
+          "time_ms": 5.725931440080915,
+          "err_mean": 0.0001773834228515625,
+          "err_max": 0.0009765625,
+          "err_p99": 0.00048828125,
+          "mean_ll": -4405.66015625,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "torch_lse",
+          "time_ms": 23.532681192670548,
+          "err_mean": 0.0,
+          "err_max": 0.0,
+          "err_p99": 0.0,
+          "mean_ll": -4405.66015625,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 3.737908567701067,
+          "err_mean": 0.00033047323813661933,
+          "err_max": 0.001953125,
+          "err_p99": 0.0009765625,
+          "mean_ll": -4405.66015625,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 3.6931565489087785,
+          "err_mean": 1.2516037225723267,
+          "err_max": 1.33251953125,
+          "err_p99": 1.29150390625,
+          "mean_ll": -4406.91259765625,
+          "abs_err_bias": 1.25244140625
+        }
+      ],
+      "ref_ll": -4405.66015625,
+      "n_samples": 9728
+    },
+    {
+      "num_latents": 32,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_default",
+          "time_ms": 6.574900524956839,
+          "err_mean": 0.01599668152630329,
+          "err_max": 0.0400390625,
+          "err_p99": 0.03173828125,
+          "mean_ll": -4381.564453125,
+          "abs_err_bias": 0.01611328125
+        },
+        {
+          "device": "gpu",
+          "kernel": "pyjuice_sparse",
+          "time_ms": 5.754068613052368,
+          "err_mean": 0.0001119814405683428,
+          "err_max": 0.0009765625,
+          "err_p99": 0.00048828125,
+          "mean_ll": -4381.54833984375,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "torch_lse",
+          "time_ms": 23.81632709503174,
+          "err_mean": 0.0,
+          "err_max": 0.0,
+          "err_p99": 0.0,
+          "mean_ll": -4381.54833984375,
+          "abs_err_bias": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 3.718345148222787,
+          "err_mean": 0.0003027163038495928,
+          "err_max": 0.00146484375,
+          "err_p99": 0.0009765625,
+          "mean_ll": -4381.5478515625,
+          "abs_err_bias": 0.00048828125
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 3.7185783045632497,
+          "err_mean": 1.2551695108413696,
+          "err_max": 1.29150390625,
+          "err_p99": 1.279296875,
+          "mean_ll": -4382.80322265625,
+          "abs_err_bias": 1.2548828125
+        }
+      ],
+      "ref_ll": -4381.54833984375,
+      "n_samples": 9728
+    }
+  ]
+}

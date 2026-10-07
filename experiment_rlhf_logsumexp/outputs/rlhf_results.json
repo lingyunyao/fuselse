@@ -1,0 +1,141 @@
+{
+  "gpu": "Tesla V100-PCIE-32GB",
+  "trl_version": "1.0.0",
+  "T": 1024,
+  "vocab_configs": [
+    [
+      "Llama-2",
+      32000,
+      8
+    ],
+    [
+      "GPT-2",
+      50257,
+      8
+    ],
+    [
+      "Llama-3",
+      128256,
+      4
+    ],
+    [
+      "Gemma",
+      256128,
+      2
+    ]
+  ],
+  "results": [
+    {
+      "model": "Llama-2",
+      "V": 32000,
+      "B": 8,
+      "T": 1024,
+      "t_fwd_ref_ms": 209.25734375,
+      "lse_frac_pct": 99.28257015004233,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "torch",
+          "time_ms": 7.936196899414062,
+          "abs_err": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 1.2914303588867186,
+          "abs_err": 1.1226414926568395e-06
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 1.3168826293945313,
+          "abs_err": 0.005389772821217775
+        }
+      ]
+    },
+    {
+      "model": "GPT-2",
+      "V": 50257,
+      "B": 8,
+      "T": 1024,
+      "t_fwd_ref_ms": 229.3160546875,
+      "lse_frac_pct": 99.0483909358573,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "torch",
+          "time_ms": 12.3699560546875,
+          "abs_err": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 2.0085408020019533,
+          "abs_err": 1.841112316469662e-05
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 2.0761068725585936,
+          "abs_err": 0.013221500441432
+        }
+      ]
+    },
+    {
+      "model": "Llama-3",
+      "V": 128256,
+      "B": 4,
+      "T": 1024,
+      "t_fwd_ref_ms": 153.259013671875,
+      "lse_frac_pct": 99.78689261631098,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "torch",
+          "time_ms": 15.4544482421875,
+          "abs_err": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 2.46459716796875,
+          "abs_err": 3.002256335093989e-06
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 2.514157409667969,
+          "abs_err": 0.00988774187862873
+        }
+      ]
+    },
+    {
+      "model": "Gemma",
+      "V": 256128,
+      "B": 2,
+      "T": 1024,
+      "t_fwd_ref_ms": 107.29697265625,
+      "lse_frac_pct": 99.7669701319812,
+      "measurements": [
+        {
+          "device": "gpu",
+          "kernel": "torch",
+          "time_ms": 15.31812255859375,
+          "abs_err": 0.0
+        },
+        {
+          "device": "gpu",
+          "kernel": "fused",
+          "time_ms": 2.4314533996582033,
+          "abs_err": 9.554455573379528e-06
+        },
+        {
+          "device": "gpu",
+          "kernel": "int",
+          "time_ms": 2.474451141357422,
+          "abs_err": 0.014571981504559517
+        }
+      ]
+    }
+  ]
+}
