@@ -1,15 +1,10 @@
 # Experiments not included in the public release
-experiment_rlhf_compare_cce/
-experiment_microbenchmark/accuracy_audit/
-experiment_microbenchmark/modern_baselines/
-experiment_microbenchmark/torch_profile/
+unreleased/
 
-# Private / paper-writing files
+# Local documents
 *.pdf
-neurips26_rebuttal*.md
-neurips_camready.md
 
-# External dependencies cloned by the experiments (see README)
+# External libraries cloned by users (see the experiment scripts)
 experiment_particle_filter/particles/
 experiment_pyjuice/pyjuice/
 references/

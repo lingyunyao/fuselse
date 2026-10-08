@@ -1,6 +1,8 @@
 """
 RLHF log-softmax benchmark: GPU-only.
 
+Requires: pip install 'trl==1.0.0' transformers datasets
+Downloads GPT-2 and the Anthropic/hh-rlhf dataset from Hugging Face on first run.
 """
 
 import os

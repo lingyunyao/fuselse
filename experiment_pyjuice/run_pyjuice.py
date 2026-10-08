@@ -14,7 +14,9 @@ from torch.utils.data import TensorDataset, DataLoader
 from torch.utils.cpp_extension import load
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# `pyjuice` (Tractables) must be cloned into ./pyjuice/ — see top-level README.
+# Requires PyJuice cloned into this folder and installed:
+#   cd experiment_pyjuice && git clone https://github.com/Tractables/pyjuice.git
+#   pip install -e pyjuice/
 sys.path.insert(0, os.path.join(SCRIPT_DIR, "pyjuice", "src"))
 
 import pyjuice as juice

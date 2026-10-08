@@ -10,9 +10,10 @@ from scipy import special
 import torch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# `particles` (Chopin) must be cloned into ./particles/ — see top-level README.
+# Requires the `particles` library cloned into this folder:
+#   cd experiment_particle_filter && git clone https://github.com/nchopin/particles.git
 sys.path.insert(0, os.path.join(HERE, "particles"))
-# IntLSE CPU kernel lives at project root (../intlse/cpu/).
+# Requires the IntLSE CPU library, built from the repo root with: bash intlse/cpu/build.sh
 sys.path.insert(0, os.path.join(HERE, "..", "intlse", "cpu"))
 
 import particles
